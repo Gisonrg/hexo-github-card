@@ -1,0 +1,32 @@
+{
+  "name": "hexo-github-card",
+  "version": "1.0.0",
+  "description": "Display a card for GitHub profile and repo in your hexo blog. Implemented with Github-cards.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gisonrg/hexo-github-card.git"
+  },
+  "keywords": [
+    "website",
+    "blog",
+    "hexo",
+    "github",
+    "card"
+  ],
+  "author": {
+    "name": "Jiang Sheng",
+    "email": "gisonrg@gmail.com",
+    "url": "http://gisonrg.me"
+  },
+  "license": "MIT",
+  "engines": {
+    "hexo": ">= 3.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "hexo-fs": "^0.1.5",
+    "nunjucks": "^2.4.1"
+  },
+  "readmeFilename": "README.md"
+}
