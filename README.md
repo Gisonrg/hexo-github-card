@@ -18,7 +18,7 @@ Luckily, there is a repo called [github-cards](https://github.com/lepture/github
 Insert `githubCard` tag in your article:
 
 ```
-{% githubCard user [repo] [width = 400] [theme] [client_id] [client_secret] %}
+{% githubCard user:your_user [repo:your_repo] [width:400] [theme:Default] [client_id:your_client_id] [client_secret:your_client_secret] %}
 ```
 
 Argument | Description
@@ -35,12 +35,12 @@ Example:
 
 Display user profile only
 ```
-{% githubCard Gisonrg %}
+{% githubCard user:Gisonrg %}
 ```
 
 Display a repo
 ```
-{% githubCard Gisonrg hexo-github-card %}
+{% githubCard user:Gisonrg repo:hexo-github-card %}
 ```
 
 TODO
