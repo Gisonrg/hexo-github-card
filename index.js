@@ -30,7 +30,7 @@ hexo.extend.tag.register('githubCard', function(args) {
 
   var user = arg_obj.user,
     repo = arg_obj.repo,
-    width = arg_obj.width ? arg_obj.width : '700',
+    width = arg_obj.width ? arg_obj.width : '400',
     theme = arg_obj.theme ? arg_obj.theme : 'default',
     client_id = arg_obj.client_id ? arg_obj.client_id : '',
     client_secret = arg_obj.client_secret ? arg_obj.client_secret : '';
