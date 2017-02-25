@@ -1,5 +1,5 @@
 # hexo-github-card
-Display a card for GitHub profile and repo in your [hexo](hexo.io) blog. Implemented with [Github-cards](https://github.com/lepture/github-cards).
+Display a card for GitHub profile and repo in your [hexo](https://hexo.io) blog. Implemented with [Github-cards](https://github.com/lepture/github-cards).
 
 ## Motive
 
@@ -11,7 +11,15 @@ Luckily, there is a repo called [github-cards](https://github.com/lepture/github
 
 ## Install
 
-`npm install --save hexo-github-card`
+NPM
+```
+npm install --save hexo-github-card
+```
+
+Yarn
+```
+yarn add hexo-github-card
+```
 
 ## Usage
 
@@ -47,6 +55,9 @@ TODO
 -----------
 * May be a good idea to put the configuration in the `_config.yml` file.
 * [github-cards](https://github.com/lepture/github-cards) is sometimes buggy. Probably I could fork it to create my own build.
+
+## Credit
+@incomparable9527 for introducing key value (attr:value) attribute pair to support unordered attributes.
 
 License
 =======
