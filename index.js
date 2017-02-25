@@ -21,12 +21,19 @@ hexo.extend.generator.register('github-card-lib', function(locals) {
 nunjucks.configure(__dirname, {watch: false});
 
 hexo.extend.tag.register('githubCard', function(args) {
-  var user = args[0],
-    repo = args[1],
-    width = args[2] ? args[2] : '400',
-    theme = args[3] ? args[3] : 'default',
-    client_id = args[4] ? args[4] : '',
-    client_secret = args[5] ? args[5] : '';
+  var arg_obj={};
+  
+  args.forEach(function(arg){
+  var current_arg =arg.split(":");
+  arg_obj[current_arg[0]]=current_arg[1]
+  });
+
+  var user = arg_obj.user,
+    repo = arg_obj.repo,
+    width = arg_obj.width ? arg_obj.width : '400',
+    theme = arg_obj.theme ? arg_obj.theme : 'default',
+    client_id = arg_obj.client_id ? arg_obj.client_id : '',
+    client_secret = arg_obj.client_secret ? arg_obj.client_secret : '';
 
   var payload = {
     user: user,
