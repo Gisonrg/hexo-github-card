@@ -9,6 +9,8 @@ Currently, there is a hexo plugin called [hexo-github](https://github.com/akfish
 
 Luckily, there is a repo called [github-cards](https://github.com/lepture/github-cards), which just suits my need well. Hence, I implement this simple plugin so that bloggers could include information on GitHub at ease.
 
+You may find more about how I create the plugin by reading my [blog post](https://blog.gisonrg.me/2016/04/develop-hexo-github-card/)
+
 ## Install
 
 NPM
