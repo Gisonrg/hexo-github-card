@@ -12,20 +12,22 @@ hexo.extend.generator.register('github-card-lib', function(locals) {
 
   return {
     path: 'github-card-lib/' + file,
-    data: function () {
+    data: function() {
       return fs.createReadStream(filePath);
     }
   };
 });
 
-nunjucks.configure(__dirname, {watch: false});
+nunjucks.configure(__dirname, {
+  watch: false
+});
 
 hexo.extend.tag.register('githubCard', function(args) {
-  var arg_obj={};
-  
-  args.forEach(function(arg){
-  var current_arg =arg.split(":");
-  arg_obj[current_arg[0]]=current_arg[1]
+  var arg_obj = {};
+
+  args.forEach(function(arg) {
+    var current_arg = arg.split(":");
+    arg_obj[current_arg[0]] = current_arg[1]
   });
 
   var user = arg_obj.user,
@@ -41,15 +43,17 @@ hexo.extend.tag.register('githubCard', function(args) {
     width: width,
     theme: theme,
     client_id: client_id,
-    client_secret : client_secret
+    client_secret: client_secret
   };
 
-  return new Promise(function (resolve, reject) {
-    nunjucks.render('card.html', payload, function (err, res) {
+  return new Promise(function(resolve, reject) {
+    nunjucks.render('card.html', payload, function(err, res) {
       if (err) {
         return reject(err);
       }
       resolve(res);
     });
   });
-}, {async: true});
+}, {
+  async: true
+});
