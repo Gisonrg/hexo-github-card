@@ -32,11 +32,11 @@ hexo.extend.tag.register('githubCard', function(args) {
 
   var user = arg_obj.user,
     repo = arg_obj.repo,
-    width = arg_obj.width ? arg_obj.width : '400',
-    theme = arg_obj.theme ? arg_obj.theme : 'default',
-    client_id = arg_obj.client_id ? arg_obj.client_id : '',
-    client_secret = arg_obj.client_secret ? arg_obj.client_secret : '',
-    align = arg_obj.align ? arg_obj.align : 'center';
+    width = arg_obj.width || '400',
+    theme = arg_obj.theme || 'default',
+    client_id = arg_obj.client_id || '',
+    client_secret = arg_obj.client_secret || '',
+    align = arg_obj.align || 'center';
 
   var payload = {
     user: user,
@@ -45,7 +45,7 @@ hexo.extend.tag.register('githubCard', function(args) {
     theme: theme,
     client_id: client_id,
     client_secret: client_secret,
-    align: align
+    style: 'text-align:' + align
   };
 
   return new Promise(function(resolve, reject) {
