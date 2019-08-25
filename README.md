@@ -28,14 +28,15 @@ yarn add hexo-github-card
 Insert `githubCard` tag in your article:
 
 ```
-{% githubCard user:your_user [repo:your_repo] [width:400] [theme:Default] [client_id:your_client_id] [client_secret:your_client_secret] [align:text-align_position] %}
+{% githubCard user:your_user [repo:your_repo] [width:400] [height:200] [theme:default] [client_id:your_client_id] [client_secret:your_client_secret] [align:text-align_position] %}
 ```
 
 Argument | Description
 -------- | -----------
 user     | GitHub user name
 repo     |  (Optional) GitHub repository name of the user. If omit then display only the user profile
-width   | (Optional) Widget's width. It should be a valid CSS width value. Default is 400.
+height   | (Optional) Widget's height (in 'px'). Default is 200.
+width   | (Optional) Widget's width (in 'px'). Default is 400.
 client_id | (Optional) Your GitHub app client_id
 client_secret | (Optional) Your GitHub app client_secret
 align | (Optional) What kind of text-align is you want. Default is center.
