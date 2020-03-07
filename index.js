@@ -10,7 +10,7 @@ const GITHUB_CARD_LIB_NAME = 'githubcard.js';
 const GITHUB_CARD_FILE_PATH = path.resolve(LIB_PATH, GITHUB_CARD_LIB_NAME);
 const GITHUB_CARD_ROUTE_NAME = 'github-card-lib';
 const GITHUB_CARD_TAG_NAME = 'githubCard';
-const GITHUB_CARD_TEMPLATE = 'card.html';
+const GITHUB_CARD_TEMPLATE = path.resolve(__dirname, 'card.html');
 
 nunjucks.configure(__dirname, {
   watch: false,
