@@ -26,7 +26,7 @@
   "dependencies": {
     "bluebird": "^3.3.4",
     "hexo-fs": "^2.0.0",
-    "nunjucks": "^3.2.0"
+    "nunjucks": "^2.5.2"
   },
   "readmeFilename": "README.md"
 }
